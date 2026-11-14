@@ -12,3 +12,8 @@ Examples for the post. Run any file directly; each skips providers whose key is 
 | 06 | `examples/06_two_bots_conversation.py` | the messages-list pattern: a snarky bot vs a polite bot |
 
 Put run screenshots in `screenshots/` (e.g. `01_one_client.png`).
+
+### Negative example
+| # | File | Shows (anti-pattern) |
+|---|------|---------------------|
+| 07 | `examples/07_no_memory_antipattern.py` | no conversation history → the bot forgets; same run shows the fix |

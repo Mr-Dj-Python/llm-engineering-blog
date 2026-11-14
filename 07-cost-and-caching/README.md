@@ -11,3 +11,8 @@ static context — `_sample.py` downloads it once (git-ignored).
 | 04 | `examples/04_reasoning_effort_cost.py` | reasoning effort as a cost lever |
 
 Put run screenshots in `screenshots/`.
+
+### Negative example
+| # | File | Shows (anti-pattern) |
+|---|------|---------------------|
+| 05 | `examples/05_caching_antipattern.py` | prompt ordered wrong (variable first) → cache never hits; same run shows the fix |
