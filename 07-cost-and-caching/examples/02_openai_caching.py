@@ -12,7 +12,7 @@ from _sample import get_text
 
 load_dotenv()
 BIG = get_text()
-model = os.getenv("LITELLM_MODEL", "openai/" + os.getenv("OPENAI_MODEL", "gpt-4.1-mini"))
+model = os.getenv("LITELLM_MODEL", "openai/" + os.getenv("OPENAI_MODEL", "gpt-6-luna"))
 
 def ask(q):
     r = completion(model=model, messages=[

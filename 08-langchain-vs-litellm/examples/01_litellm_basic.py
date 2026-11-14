@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 from litellm import completion
 
 load_dotenv()
-model = os.getenv("LITELLM_MODEL", "openai/" + os.getenv("OPENAI_MODEL", "gpt-4.1-mini"))
+model = os.getenv("LITELLM_MODEL", "openai/" + os.getenv("OPENAI_MODEL", "gpt-6-luna"))
 
 resp = completion(model=model, messages=[{"role": "user", "content": "Tell a short joke about frameworks."}])
 u = resp.usage

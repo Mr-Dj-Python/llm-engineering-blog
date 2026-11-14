@@ -18,7 +18,7 @@ if not (os.getenv("OPENAI_API_KEY") and os.getenv("ANTHROPIC_API_KEY")):
 openai = OpenAI()
 anthropic = OpenAI(api_key=os.getenv("ANTHROPIC_API_KEY"), base_url="https://api.anthropic.com/v1/")
 
-gpt_model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+gpt_model = os.getenv("OPENAI_MODEL", "gpt-6-luna")
 claude_model = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
 
 gpt_system = "You are argumentative and snarky; you disagree with everything, briefly."

@@ -13,7 +13,7 @@ load_dotenv()
 if not os.getenv("OPENAI_API_KEY"):
     raise SystemExit("[skip] OPENAI_API_KEY not set")
 
-model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+model = os.getenv("OPENAI_MODEL", "gpt-6-luna")
 llm = ChatOpenAI(model=model)
 response = llm.invoke([{"role": "user", "content": "Tell a short joke about frameworks."}])
 

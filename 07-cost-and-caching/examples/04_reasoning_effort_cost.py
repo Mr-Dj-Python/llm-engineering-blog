@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 from litellm import completion
 
 load_dotenv()
-model = os.getenv("LITELLM_MODEL", "openai/" + os.getenv("OPENAI_MODEL", "gpt-4.1-mini"))
+model = os.getenv("LITELLM_MODEL", "openai/" + os.getenv("OPENAI_MODEL", "gpt-6-luna"))
 puzzle = [{"role": "user", "content": "A bat and ball cost $1.10. The bat costs $1 more than the ball. How much is the ball?"}]
 
 for effort in ("low", "high"):

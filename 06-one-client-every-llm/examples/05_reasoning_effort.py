@@ -15,7 +15,7 @@ if not os.getenv("OPENAI_API_KEY"):
     raise SystemExit("[skip] OPENAI_API_KEY not set")
 
 client = OpenAI()
-model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+model = os.getenv("OPENAI_MODEL", "gpt-6-luna")
 puzzle = [{"role": "user", "content":
     "You toss 2 coins. One is heads. Probability the other is tails? Answer with the number only."}]
 

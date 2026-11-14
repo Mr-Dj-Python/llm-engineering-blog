@@ -15,7 +15,7 @@ PROMPT = [{"role": "user", "content": "Tell a short joke about APIs."}]
 
 # (label, api_key, base_url, model)  -- base_url=None means default OpenAI endpoint
 PROVIDERS = [
-    ("OpenAI",    os.getenv("OPENAI_API_KEY"),    None,                                                        os.getenv("OPENAI_MODEL", "gpt-4.1-mini")),
+    ("OpenAI",    os.getenv("OPENAI_API_KEY"),    None,                                                        os.getenv("OPENAI_MODEL", "gpt-6-luna")),
     ("Anthropic", os.getenv("ANTHROPIC_API_KEY"), "https://api.anthropic.com/v1/",                             os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")),
     ("Gemini",    os.getenv("GOOGLE_API_KEY"),    "https://generativelanguage.googleapis.com/v1beta/openai/",  os.getenv("GEMINI_MODEL", "gemini-2.0-flash")),
     ("Groq",      os.getenv("GROQ_API_KEY"),      "https://api.groq.com/openai/v1",                            os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")),
