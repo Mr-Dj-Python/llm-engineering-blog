@@ -17,7 +17,7 @@ from litellm import completion
 from _sample import get_text
 
 load_dotenv()
-BIG = get_text()
+BIG = get_text(unique=True)
 model = os.getenv("LITELLM_MODEL", "openai/" + os.getenv("OPENAI_MODEL", "gpt-6-luna"))
 
 def run(messages_builder, q):
