@@ -15,7 +15,7 @@ if not os.getenv("ANTHROPIC_API_KEY"):
     raise SystemExit("[skip] ANTHROPIC_API_KEY not set")
 
 client = anthropic.Anthropic()
-BIG = get_text()
+BIG = get_text(unique=True)
 model = os.getenv("ANTHROPIC_MODEL", "claude-haiku-4-5")
 
 def ask(q):
