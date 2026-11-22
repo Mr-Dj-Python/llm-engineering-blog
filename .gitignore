@@ -4,3 +4,5 @@ __pycache__/
 .venv/
 venv/
 hamlet.txt
+.idea/
+.DS_Store
